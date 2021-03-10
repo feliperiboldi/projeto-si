@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* Titles */
+.title-carousel {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 3.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  color: #f3f3f3;
+}
+
+.title-section-1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  line-height: 1.5em;
+}
+
+.title-section-1 span {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1.8em !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  line-height: 1em;
+  color: #1ABC9C;
+  display: block;
+}
+
+.title-section-2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  line-height: 1.5em;
+  color: #f3f3f3;
+}
+
+.title-section-2 span {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1.8em !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  line-height: 1em;
+  color: #1ABC9C;
+  display: block;
+}
+
+.speeches-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #1ABC9C;
+}
+
+/* Subtitles */
+.subtitle-carousel {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #f3f3f3;
+}
+
+/* Buttons */
+.btn-1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #1ABC9C;
+  border: 2px solid #1ABC9C;
+  padding: 8px 20px;
+}
+
+.btn-1:focus,
+.btn-1:hover {
+  color: #f3f3f3;
+  background-color: #1ABC9C;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Carousel */
+.carousel-image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-image .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 90, 207, 0.75)), color-stop(0), to(rgba(1, 38, 143, 0.85)));
+  background: linear-gradient(to bottom, rgba(0, 90, 207, 0.75), 0, rgba(1, 38, 143, 0.85));
+}
+
+.carousel-content {
+  position: relative;
+  z-index: 10;
+}
+
+.btn-carousel-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.owl-home .owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.owl-home .owl-dots .owl-dot.active span {
+  background-color: #fff !important;
+  border: 1px solid #fff !important;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 18px !important;
+}
+
+.owl-home .owl-dots .owl-dot span {
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+}
+
+/* About */
+.img-about {
+  max-width: 95%;
+}
+
+/* Speeches */
+.speeches {
+  background-color: #f2f4f6;
+}
+
+.speeches-link {
+  text-decoration: none;
+}
+
+.speeches-link figure {
+  height: 240px;
+  z-index: 12;
+  overflow: hidden;
+  position: relative;
+}
+
+.speeches-link img {
+  opacity: 1;
+  z-index: 8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.speeches-link figure .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 90, 207, 0.75)), color-stop(0), to(rgba(1, 38, 143, 0.85)));
+  background: linear-gradient(to bottom, rgba(0, 90, 207, 0.75), 0, rgba(1, 38, 143, 0.85));
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.speeches-link figure .overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -21px;
+  font-size: 2em;
+  color: #f3f3f3;
+  z-index: 12;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.speeches-link:focus img,
+.speeches-link:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.speeches-link:focus figure .overlay,
+.speeches-link:hover figure .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.speeches-icons i {
+  color: #000000;
+}
+
+.speeches-info {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #000000;
+  margin-left: 3px;
+}
+
+.owl-speeches .owl-dots .owl-dot span {
+  background-color: transparent !important;
+  border: 2px solid #2b2b2b;
+}
+
+.owl-speeches .owl-dots .owl-dot.active span {
+  background-color: #2b2b2b !important;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 18px !important;
+}
+
+/* Contact */
+.contact {
+  background-color: #2b2b2b;
+}
+
+.input-form-contact {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #f3f3f3;
+  background: transparent;
+  border: 1px solid #f3f3f3;
+  width: 100%;
+  margin: 10px 0;
+  padding: .375rem .75rem;
+}
+
+.input-form-contact::-webkit-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #f3f3f3;
+}
+
+.input-form-contact:-ms-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #f3f3f3;
+}
+
+.input-form-contact::-ms-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #f3f3f3;
+}
+
+.input-form-contact::placeholder {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #f3f3f3;
+}
+
+.btn-form-contact-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

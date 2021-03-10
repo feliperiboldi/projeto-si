@@ -1,0 +1,1 @@
+$(window).width(),$(".carousel-image").height($(window).height()-0),$(window).resize(function(){$(".carousel-image").height($(window).height()-0)})
